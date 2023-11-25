@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<!--
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/JSP_Servlet/Html.html to edit this template
+-->
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="css/resgister.css">
+    </head>
+
+    <body style="background-image: url(image/hero-bg.png);">
+        <section>
+            <nav>
+                <a href="#" class="logo">
+                    <img src="image/college.png" width="110px" />
+                </a>
+                <input class="menu-btn" type="checkbox" id="menu-btn" />
+                <label class="menu-icon" for="menu-btn">
+                    <span class="nav-icon"></span>
+                </label>
+                <ul class="menu" style="border-radius: 5px;">
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Notification</a></li>
+                    <li><a href="#">Results</a></li>
+                    <li><a href="#">Apply Now</a></li>
+                    <li><a class="active" onclick="document.getElementById('id01').style.display = 'block'"
+                           style="width:auto; border-radius: 5px; cursor: pointer;">Login</a></li>
+                </ul>
+            </nav>
+            <div class="collage-regis">
+                <div class="res-img">
+                    <img src="image/register-student-2.png" alt="">
+                    <div class="bar">
+
+                    </div>
+                </div>
+                <form action="RegisInsert.jsp" method="post">
+                    <label for="text">StudentID</label>
+                    <input type="text" name="txtID">
+                    <label for="text">Name:</label>
+                    <input type="text" name="txtname">
+                    <label for="text">Gender:</label>
+                    <input type="text" name="txtgender">
+                    <label for="text">Mobile Phone:</label>
+                    <input type="text" name="txtphone">
+                    <label for="text">Email:</label>
+                    <input type="email" name="txtemail">
+                    <label for="text">Password:</label>
+                    <input type="password" name="txtpass">
+                    <div class="res-btn">
+                        <input type="submit" value="resgister now" class="btn-res">
+                        <button class="btn-back">
+                            <a href="./index.html">Back</a>
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </section>
+    </body>
+    <script>
+    </script>
+</html>

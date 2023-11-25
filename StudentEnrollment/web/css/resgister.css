@@ -1,0 +1,110 @@
+/*
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/JSP_Servlet/CascadeStyleSheet.css to edit this template
+*/
+/* 
+    Created on : Oct 27, 2023, 9:35:45 PM
+    Author     : Sian Nun
+*/
+
+
+.collage-regis{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 120px;
+
+}
+.res-img{
+    width: 500px;
+    height: 470px;
+    background-color: rgb(237, 239, 240);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.res-img img{
+    width: 400px;
+    height: 300px;
+}
+form {
+    width: 350px;
+    height: 470px;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    background-color: rgb(237, 239, 240);
+}
+
+form input {
+    margin-left:10px ;
+    width: 280px;
+    height: 30px;
+    outline: none;
+    outline: none;
+    border: none;
+    border: 2px solid green;
+    padding: 0px 0px 0px 5px;
+}
+label {
+    margin-top: 10px;
+    margin-left:10px ;
+    font-family: serif;
+    font-weight: bold;
+}
+form input:focus {
+    border-color: blue;
+}
+
+.add-btn{
+    cursor: pointer;
+    font-size: 15px;
+    font-family: serif;
+    font-weight: bold;
+    color: blue;
+    border-color: blue;
+}
+.btn-res{
+    width: 120px;
+    margin-top: 10px;
+    border: none;
+    background-color: #1317C2;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    font-family: serif;
+}
+.res-btn{
+    display: flex;
+    justify-content: space-between;
+}
+.cancel{
+    background-color: #C31333;
+    margin-right: 50px;
+}
+.bar{
+    width: 5px;
+    height: 380px;
+    background-color: #D1D1D1;
+    border-radius: 10px;
+    margin-left: 10px;
+}
+.res-student{
+    margin-top: 120px;
+}
+
+@media all and (max-width:700px){
+    .res-img{
+        display: none;
+    }
+    form input{
+        margin-left: 30px;
+    }
+    form label{
+        margin-left: 30px;
+    }
+    .cancel{
+        margin-right: 40px;
+    }
+}   

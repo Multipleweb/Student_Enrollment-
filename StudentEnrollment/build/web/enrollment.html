@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<!--
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/JSP_Servlet/Html.html to edit this template
+-->
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="styles.css">
+        <title>Student Enrollment Form</title>
+    </head>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        .container {
+            width: 400px;
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 8px;
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+        }
+
+        label {
+            margin-top: 10px;
+        }
+        
+        input{
+            outline: none;
+        }
+
+        input, select {
+            padding: 8px;
+            margin-top: 5px;
+            outline: none;
+        }
+
+        button {
+            background-color: #4caf50;
+            color: white;
+            padding: 10px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            margin-top: 10px;
+        }
+
+        button:hover {
+            background-color: #45a049;
+        }
+
+    </style>
+    <body>
+        <div class="container">
+            <form action="enrollInsert.jsp">
+                <h2>Student Enrollment Form</h2>
+                <label for="firstName">StudentID:</label>
+                <input type="text" id="id" required name="name" name="id">
+                <label for="firstName">First Name:</label>
+                <input type="text" id="firstName" required name="fname">
+
+                <label for="lastName">Last Name:</label>
+                <input type="text" id="lastName" required name="lname">
+
+                <label for="gender">Gender:</label>
+                <select id="gender" required name="gender">
+                    <option value="male">Male</option>
+                    <br>
+                    <option value="female">Female</option>
+                    <option value="other">Other</option>
+                </select>
+
+                <label for="dob">Date of Enrollment</label>
+                <input type="date" id="dob" required name="dob">
+
+                <label for="course">Course:</label>
+                <select id="id" name="course">
+                    <option value="Information Technology">Information Technology</option>
+                    <option value="Cyber security">Cyber security</option>
+                    <option value="Machine learnin">Machine learning</option>
+                </select>
+
+
+                <button type="submit">Enroll</button>
+            </form>
+        </div>
+    </body>
+</html>
+
